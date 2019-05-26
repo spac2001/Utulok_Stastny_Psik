@@ -155,7 +155,44 @@ header {
 .hanging-dog img {
     float: left;
     margin-left: -50px;
-    opacity: 1;
     height: 400px;
 }
+
 /* IN PROGRES OF DEVELOPING */
+
+/* Section Adoption */
+
+/* Vlozit hore nadpis : Cakame na adopciu */
+
+.section-adoptions {
+    
+   padding: 0;
+}
+
+.adoptions-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.adoptions-showcase li {
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+.dog-photo {
+    background-color: #000;
+    height: 400px;
+    width: 360px;
+    margin: 0px;
+}
+
+.dog-photo {
+    filter: grayscale(100%);
+    transition: .3s ease-in-out;
+}
+
+.dog-photo:hover {
+    filter: grayscale(0%);
+}
