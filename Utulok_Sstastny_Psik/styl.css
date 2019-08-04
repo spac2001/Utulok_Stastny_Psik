@@ -1,0 +1,20 @@
+
+.fucl {
+    height: 1050px;
+}
+
+.foto {
+    position: relative;
+}
+
+.foto img {
+    height: 400px;
+    width: auto;
+}
+
+.text {
+    position: absolute;
+    text-align: center;
+    padding-top: 40%;
+    
+}

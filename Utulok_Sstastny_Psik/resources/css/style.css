@@ -17,14 +17,14 @@ html {
     
 }
 
-section {
-    padding: 80px;
-}
+
+
 
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
+
 
 
 /*----------------------------------------- */
@@ -158,41 +158,72 @@ header {
     height: 400px;
 }
 
-/* IN PROGRES OF DEVELOPING */
 
 /* Section Adoption */
 
 /* Vlozit hore nadpis : Cakame na adopciu */
 
-.section-adoptions {
-    
-   padding: 0;
-}
 
 .adoptions-showcase {
     list-style: none;
-    width: 100%;
-}
-
-.adoptions-showcase li {
-    display: block;
-    float: left;
-    width: 20%;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 5fr));
+    grid-gap: 10px;
+    justify-items: center;
 }
 
 .dog-photo {
-    background-color: #000;
+    position: relative;
+}
+
+.text-about-dog {
+    position: absolute;
+    top: 0;
     height: 400px;
     width: 360px;
-    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    visibility: hidden
 }
 
-.dog-photo {
+.adoptions-showcase img {
+    transform: scale(0.98);
     filter: grayscale(100%);
     transition: .3s ease-in-out;
 }
 
-.dog-photo:hover {
+.adoptions-showcase img:hover {
+    transform: scale(1);
     filter: grayscale(0%);
+}
+
+.dog-photo.show .text-about-dog {
+    visibility: visible;
+}
+
+.dog-photo.show img {
+    transform: scale(1);
+    filter: grayscale(0%);
+}
+
+/* Succes Stories */
+
+.success-stories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.story-1 {
+    min-width: 0;
+    max-width: 100%;
+    
+}
+
+.story-1 img {
+    height: 700px;
+    max-width: 100%;
+    max-height: 700px;
+    
 }
